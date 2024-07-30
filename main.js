@@ -1,4 +1,4 @@
-function send_external(message){
+export function send_external(message){
     var data = {
         service_id: 'service_hh0c2tl',
         template_id: 'service_hh0c2tl',
