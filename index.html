@@ -3,10 +3,10 @@
 <body>
   
 
-  <script type="module">import { send_external } from "./main.js";</script>
+  <script type="module">import { send_external} from "./main.js"; window.send_external = send_external;</script>
   <label for="Message">Message:</label><br>
   <input type="text" id="msg" name="Message"><br>
-  <button type="button" onclick="send_external(document.getElementById('msg').value)">Send</button><br>
+  <button type="button" onclick="window.send_external(document.getElementById('msg').value)">Send</button><br>
 
 </body>
 </html> 
