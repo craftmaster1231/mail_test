@@ -1,4 +1,5 @@
 export function send_external(message){
+    var startingTime = new Date().getTime();
     // Load the script
     var script = document.createElement("SCRIPT");
     script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
