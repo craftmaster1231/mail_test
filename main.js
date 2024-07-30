@@ -3,11 +3,11 @@ function send_external(message){
         service_id: 'service_hh0c2tl',
         template_id: 'service_hh0c2tl',
         user_id: 'wNZUYGOa76yi2qXHg',
-        template_params: {
+        template_params: JSON.stringify({
             'to_name': 'дружище',
             'from_name': 'GitHub'
-            'message': JSON.stringify(message)
-        }
+            'message': message
+        })
     };
      
     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
